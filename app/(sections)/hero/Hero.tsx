@@ -52,7 +52,7 @@ export function Hero() {
                 </div>
                 <div className="border-t border-border-subtle pt-6">
                   <div className="text-sm text-text-muted mb-2">AD SPEND MANAGED</div>
-                  <div className="text-4xl font-bold text-text-main">$2,500,000+</div>
+                  <div className="text-4xl font-bold text-text-main">$750,000+</div>
                 </div>
                 <div className="border-t border-border-subtle pt-6">
                   <div className="text-sm text-text-muted mb-2">CLIENT INDUSTRIES</div>
