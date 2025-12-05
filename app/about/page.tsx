@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { SectionHeader } from '@/app/(components)/ui/SectionHeader'
 import { Card } from '@/app/(components)/ui/Card'
-import { AnimatedCard } from '@/app/(components)/ui/AnimatedCard'
+import { Breadcrumbs } from '@/app/(components)/seo/Breadcrumbs'
 import { values } from '@/lib/data'
 import { SITE_URL } from '@/lib/constants'
 
@@ -85,10 +85,10 @@ export default function AboutPage() {
                 description: 'Online courses, coaching programs, and digital products. We build funnels and drive traffic that converts.',
               },
             ].map((item, index) => (
-              <AnimatedCard key={item.title} index={index}>
+              <Card key={item.title}>
                 <h3 className="text-xl font-bold text-text-main mb-3">{item.title}</h3>
                 <p className="text-text-muted">{item.description}</p>
-              </AnimatedCard>
+              </Card>
             ))}
           </div>
         </div>
@@ -134,10 +134,10 @@ export default function AboutPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((value, index) => (
-              <AnimatedCard key={value.title} index={index}>
+              <Card key={value.title}>
                 <h3 className="text-xl font-bold text-text-main mb-3">{value.title}</h3>
                 <p className="text-text-muted">{value.description}</p>
-              </AnimatedCard>
+              </Card>
             ))}
           </div>
         </div>
