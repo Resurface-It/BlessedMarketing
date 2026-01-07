@@ -175,7 +175,7 @@ export const faqs = [
   },
   {
     question: 'What kind of ad spend do you require?',
-    answer: 'Our Starter tier requires a minimum of $5k/month in ad spend. For Growth and Scale tiers, we typically work with brands spending $10k-$50k+ per month. The more you invest in ads, the more we can optimize and scale.',
+    answer: 'Even with low ad spend, we can still succeed, although at least $500 in ad spend a month is recommended!',
   },
   {
     question: 'How soon can we start seeing results?',

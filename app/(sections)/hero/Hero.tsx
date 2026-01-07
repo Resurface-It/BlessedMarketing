@@ -48,11 +48,11 @@ export function Hero() {
               <div className="space-y-8">
                 <div>
                   <div className="text-sm text-text-muted mb-2">AVERAGE ROAS</div>
-                  <div className="text-4xl font-bold text-primary">3x - 5x</div>
+                  <div className="text-4xl font-bold text-primary">4x - 8x</div>
                 </div>
                 <div className="border-t border-border-subtle pt-6">
-                  <div className="text-sm text-text-muted mb-2">AD SPEND MANAGED</div>
-                  <div className="text-4xl font-bold text-text-main">$750,000+</div>
+                  <div className="text-sm text-text-muted mb-2">AVERAGE ROI</div>
+                  <div className="text-4xl font-bold text-text-main">6x / 600%</div>
                 </div>
                 <div className="border-t border-border-subtle pt-6">
                   <div className="text-sm text-text-muted mb-2">CLIENT INDUSTRIES</div>
