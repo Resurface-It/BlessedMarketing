@@ -63,7 +63,7 @@ export function Hero() {
                 Blessed Marketing is your done-for-you performance marketing agency specializing in paid traffic management. We build and manage performance-driven campaigns on Meta, Google, and TikTok to deliver 3-5x ROAS. We handle the strategy, ads, and data — you get predictable growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button href="/apply" variant="primary" size="lg">
+                <Button href="/contact" variant="primary" size="lg">
                   Apply to Work With Us
                 </Button>
                 <Button href="/contact" variant="ghost" size="lg">

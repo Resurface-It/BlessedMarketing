@@ -74,7 +74,7 @@ export default function ResultsPage() {
             <p className="text-text-muted mb-6">
               Apply to work with Blessed Marketing and let's build something worth talking about.
             </p>
-            <Button href="/apply" variant="primary">
+            <Button href="/contact" variant="primary">
               Apply Now
             </Button>
           </Card>

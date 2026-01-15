@@ -11,7 +11,7 @@ export function CTABand() {
           Apply to work with Blessed Marketing and we'll review your brand, funnel, and numbers to see if we're a fit. Learn more about our <a href="/services" className="text-primary hover:text-primary-light underline transition-colors">marketing services</a> or see our <a href="/process" className="text-primary hover:text-primary-light underline transition-colors">proven process</a>.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button href="/apply" variant="primary" size="lg">
+          <Button href="/contact" variant="primary" size="lg">
             Apply Now
           </Button>
           <Button href="/contact" variant="ghost" size="lg">

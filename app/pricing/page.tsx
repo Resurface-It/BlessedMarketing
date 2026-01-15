@@ -85,7 +85,7 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
-                  <Button href="/apply" variant={tier.name === 'Growth' ? 'primary' : 'secondary'} className="w-full">
+                  <Button href="/contact" variant={tier.name === 'Growth' ? 'primary' : 'secondary'} className="w-full">
                     Get Started
                   </Button>
                 </Card>
@@ -115,7 +115,7 @@ export default function PricingPage() {
           <p className="text-body-lg text-text-muted mb-8">
             Apply now and we'll review your brand, funnel, and numbers to recommend the right path.
           </p>
-          <Button href="/apply" variant="primary">
+          <Button href="/contact" variant="primary">
             Apply now and we'll recommend a path
           </Button>
         </div>

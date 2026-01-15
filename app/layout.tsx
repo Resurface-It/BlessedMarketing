@@ -45,6 +45,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: '/Images/E5441C6F-3719-4580-ACFF-D74F0E026579.PNG',
+    shortcut: '/Images/E5441C6F-3719-4580-ACFF-D74F0E026579.PNG',
+    apple: '/Images/E5441C6F-3719-4580-ACFF-D74F0E026579.PNG',
+  },
   verification: {
     // google: 'your-google-verification-code',
     // yandex: 'your-yandex-verification-code',

@@ -118,7 +118,7 @@ export default function ServicesPage() {
             Apply to work with Blessed Marketing and we'll review your brand, funnel, and numbers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/apply" variant="primary">
+            <Button href="/contact" variant="primary">
               Apply Now
             </Button>
             <Button href="/contact" variant="ghost">

@@ -83,7 +83,7 @@ export default function ProcessPage() {
           <p className="text-body-lg text-text-muted mb-8">
             Apply to work with us and we'll review your brand, funnel, and numbers.
           </p>
-          <Button href="/apply" variant="primary">
+          <Button href="/contact" variant="primary">
             Apply to work with us
           </Button>
         </div>
