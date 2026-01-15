@@ -4,6 +4,20 @@
 
 :root {
   --font-inter: 'Inter', system-ui, sans-serif;
+  
+  /* Color tokens */
+  --color-bg: #1A1A1E;
+  --color-bg-secondary: #202024;
+  --color-bg-elevated: #2A2A2E;
+  --color-bg-surface: #353538;
+  --color-primary: #007AFF;
+  --color-primary-hover: #0051D5;
+  --color-primary-glow: rgba(0, 122, 255, 0.3);
+  --color-text-main: #FFFFFF;
+  --color-text-secondary: #E0E0E0;
+  --color-text-muted: #A0A0A5;
+  --color-border: #3A3A3E;
+  --color-border-subtle: #2F2F33;
 }
 
 * {
@@ -17,16 +31,102 @@ html {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #050816;
+  color: var(--color-text-main);
+  background: var(--color-bg);
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1;
+  text-rendering: optimizeLegibility;
+}
+
+/* Typography base styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text-main);
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.625;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-subtle);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  /* Frosted glass effect */
+  .glass {
+    background: rgba(42, 42, 46, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
+  }
+  
+  .glow-soft {
+    box-shadow: 0 0 15px rgba(0, 122, 255, 0.2);
+  }
+  
+  /* Inner glow */
+  .glow-inner {
+    box-shadow: inset 0 0 20px rgba(0, 122, 255, 0.1);
   }
 }
 

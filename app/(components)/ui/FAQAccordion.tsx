@@ -23,9 +23,9 @@ export function FAQAccordion({ faqs }: FAQAccordionProps) {
         <Card key={index}>
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            className="w-full flex items-center justify-between text-left"
+            className="w-full flex items-center justify-between text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
           >
-            <h3 className="text-lg font-semibold text-text-main pr-4">{faq.question}</h3>
+            <h3 className="text-h5 font-semibold text-text-main pr-4">{faq.question}</h3>
             <motion.div
               animate={{ rotate: openIndex === index ? 180 : 0 }}
               transition={{ duration: 0.2 }}

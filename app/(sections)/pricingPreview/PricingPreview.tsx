@@ -16,13 +16,13 @@ export function PricingPreview() {
         />
 
         <div className="mb-8 space-y-3 max-w-2xl mx-auto text-center">
-          <p className="text-text-muted flex items-center justify-center gap-2">
+          <p className="text-text-muted flex items-center justify-center gap-2 text-body-sm">
             <span className="text-primary">✓</span> No long-term contracts by default
           </p>
-          <p className="text-text-muted flex items-center justify-center gap-2">
+          <p className="text-text-muted flex items-center justify-center gap-2 text-body-sm">
             <span className="text-primary">✓</span> Flat monthly fee + performance incentives
           </p>
-          <p className="text-text-muted flex items-center justify-center gap-2">
+          <p className="text-text-muted flex items-center justify-center gap-2 text-body-sm">
             <span className="text-primary">✓</span> Simple, transparent pricing
           </p>
         </div>
@@ -39,17 +39,17 @@ export function PricingPreview() {
               <Card className="h-full flex flex-col">
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-2xl font-bold text-text-main">{tier.name}</h3>
+                    <h3 className="text-h3 font-bold text-text-main">{tier.name}</h3>
                     {tier.discountPercent && (
-                      <span className="px-2 py-1 bg-primary/20 text-primary text-xs font-bold rounded">
+                      <span className="px-2 py-1 bg-bg-surface text-primary text-tiny font-bold rounded-sm border border-primary/30">
                         {tier.discountPercent}% OFF
                       </span>
                     )}
                   </div>
-                  <p className="text-sm text-text-muted mb-4">{tier.perfectFor}</p>
+                  <p className="text-body-sm text-text-muted mb-4">{tier.perfectFor}</p>
                   <div className="mb-6">
                     {tier.originalPrice && (
-                      <div className="text-sm text-text-muted line-through mb-1">
+                      <div className="text-body-sm text-text-muted line-through mb-1">
                         ${tier.originalPrice.toLocaleString()}/month
                       </div>
                     )}
@@ -60,7 +60,7 @@ export function PricingPreview() {
                 </div>
                 <ul className="space-y-3 flex-1">
                   {tier.bullets.map((bullet, i) => (
-                    <li key={i} className="text-sm text-text-muted flex items-start gap-2">
+                    <li key={i} className="text-body-sm text-text-muted flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
                       <span>{bullet}</span>
                     </li>

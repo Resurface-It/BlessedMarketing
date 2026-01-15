@@ -7,11 +7,11 @@ export function LogoGrid() {
       {logos.map((logo) => (
         <div
           key={logo}
-          className="w-full h-12 bg-bg-elevated rounded-lg flex items-center justify-center border border-border-subtle"
+          className="w-full h-12 bg-bg-elevated rounded-md flex items-center justify-center border border-border"
           role="img"
           aria-label={`Client logo ${logo + 1}`}
         >
-          <div className="text-text-muted text-xs">Logo {logo + 1}</div>
+          <div className="text-text-muted text-tiny">Logo {logo + 1}</div>
         </div>
       ))}
     </div>

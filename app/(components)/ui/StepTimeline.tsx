@@ -18,7 +18,7 @@ export function StepTimeline({ steps }: StepTimelineProps) {
       {steps.map((step, index) => (
         <div key={step.step} className="relative">
           {index < steps.length - 1 && (
-            <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-border-subtle hidden md:block" />
+            <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-border hidden md:block" />
           )}
           <div className="flex gap-6">
             <div className="flex-shrink-0">
@@ -28,12 +28,12 @@ export function StepTimeline({ steps }: StepTimelineProps) {
             </div>
             <div className="flex-1 pb-8">
               <Card>
-                <h3 className="text-xl font-bold text-text-main mb-2">{step.title}</h3>
+                <h3 className="text-h4 font-bold text-text-main mb-2">{step.title}</h3>
                 <p className="text-text-muted mb-4">{step.description}</p>
                 {step.details && (
                   <ul className="space-y-2">
                     {step.details.map((detail, i) => (
-                      <li key={i} className="text-text-muted text-sm flex items-start gap-2">
+                      <li key={i} className="text-text-muted text-body-sm flex items-start gap-2">
                         <span className="text-primary mt-1">•</span>
                         <span>{detail}</span>
                       </li>

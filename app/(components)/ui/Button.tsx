@@ -6,17 +6,24 @@ import { cn } from '@/lib/utils'
 
 interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'onDrag' | 'onDragEnd' | 'onDragStart'> {
   variant?: 'primary' | 'secondary' | 'ghost'
+  size?: 'sm' | 'md' | 'lg'
   href?: string
   children: React.ReactNode
 }
 
-export function Button({ variant = 'primary', href, children, className, ...props }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-bg'
+export function Button({ variant = 'primary', size = 'md', href, children, className, ...props }: ButtonProps) {
+  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg'
+  
+  const sizeStyles = {
+    sm: 'px-4 py-2 text-sm rounded-sm',
+    md: 'px-6 py-3 text-base rounded-sm',
+    lg: 'px-8 py-4 text-lg rounded-sm',
+  }
   
   const variants = {
-    primary: 'bg-primary text-slate-950 hover:bg-primary-dark hover:scale-105 hover:shadow-lg hover:shadow-primary/50',
-    secondary: 'bg-bg-elevated text-text-main border border-primary hover:bg-primary/10 hover:border-primary-dark',
-    ghost: 'bg-transparent text-primary border border-primary/30 hover:bg-primary/10 hover:border-primary',
+    primary: 'bg-bg-elevated text-text-main border border-border hover:bg-bg-surface hover:border-primary hover:shadow-glow-soft hover:shadow-primary-glow-soft',
+    secondary: 'bg-bg-elevated text-text-main border border-border hover:bg-bg-surface hover:border-primary hover:shadow-glow-soft',
+    ghost: 'bg-transparent text-text-main border border-border-subtle hover:bg-bg-elevated hover:border-primary hover:shadow-glow-soft',
   }
 
   if (href) {
@@ -25,7 +32,7 @@ export function Button({ variant = 'primary', href, children, className, ...prop
         <motion.div
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className={cn(baseStyles, variants[variant], className)}
+          className={cn(baseStyles, sizeStyles[size], variants[variant], className)}
         >
           {children}
         </motion.div>
@@ -37,7 +44,7 @@ export function Button({ variant = 'primary', href, children, className, ...prop
     <motion.button
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className={cn(baseStyles, variants[variant], className)}
+      className={cn(baseStyles, sizeStyles[size], variants[variant], className)}
       {...(props as any)}
     >
       {children}

@@ -23,7 +23,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form */}
-      <section className="py-20 bg-bg">
+      <section className="py-20 bg-bg-secondary border-y border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="p-0 overflow-hidden" hover={false}>
             <div className="w-full bg-bg-elevated">

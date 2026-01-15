@@ -31,15 +31,15 @@ export function ServicesOverview() {
               >
                 <Card>
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
+                    <div className="p-3 bg-bg-surface rounded-md border border-border">
                       <Icon className="text-primary" size={24} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-text-main mb-2">{service.title}</h3>
+                      <h3 className="text-h4 font-bold text-text-main mb-2">{service.title}</h3>
                       <p className="text-text-muted mb-4">{service.tagline}</p>
                       <ul className="space-y-2">
                         {service.bullets.map((bullet, i) => (
-                          <li key={i} className="text-sm text-text-muted flex items-start gap-2">
+                          <li key={i} className="text-body-sm text-text-muted flex items-start gap-2">
                             <span className="text-primary mt-1">•</span>
                             <span>{bullet}</span>
                           </li>

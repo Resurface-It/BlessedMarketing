@@ -64,8 +64,8 @@ export default function ProcessPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card>
-                  <div className="text-sm text-primary font-medium mb-2">{item.period}</div>
-                  <h3 className="text-xl font-bold text-text-main mb-3">{item.title}</h3>
+                  <div className="text-body-sm text-primary font-medium mb-2 tracking-wide">{item.period}</div>
+                  <h3 className="text-h4 font-bold text-text-main mb-3">{item.title}</h3>
                   <p className="text-text-muted">{item.description}</p>
                 </Card>
               </motion.div>
@@ -77,10 +77,10 @@ export default function ProcessPage() {
       {/* CTA */}
       <section className="py-20 bg-bg-elevated">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-text-main mb-4">
+          <h2 className="text-h2 font-bold text-text-main mb-4">
             Ready to start the process?
           </h2>
-          <p className="text-lg text-text-muted mb-8">
+          <p className="text-body-lg text-text-muted mb-8">
             Apply to work with us and we'll review your brand, funnel, and numbers.
           </p>
           <Button href="/apply" variant="primary">

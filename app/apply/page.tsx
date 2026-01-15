@@ -95,9 +95,9 @@ export default function ApplyPage() {
           <Card>
             {status === 'success' ? (
               <div className="text-center py-12">
-                <div className="text-5xl mb-6">✓</div>
-                <h3 className="text-3xl font-bold text-text-main mb-4">Thanks—your application is in review</h3>
-                <p className="text-lg text-text-muted">
+                <div className="text-5xl mb-6 text-primary">✓</div>
+                <h3 className="text-h2 font-bold text-text-main mb-4">Thanks—your application is in review</h3>
+                <p className="text-body-lg text-text-muted">
                   We'll respond within 1–2 business days.
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function ApplyPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-bg border border-border-subtle rounded-lg text-text-main focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 bg-bg-elevated border border-border rounded-sm text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all duration-200"
                     />
                   </div>
 
@@ -130,7 +130,7 @@ export default function ApplyPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-bg border border-border-subtle rounded-lg text-text-main focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 bg-bg-elevated border border-border rounded-sm text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all duration-200"
                     />
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function ApplyPage() {
                       required
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-bg border border-border-subtle rounded-lg text-text-main focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 bg-bg-elevated border border-border rounded-sm text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all duration-200"
                     />
                   </div>
 
@@ -162,7 +162,7 @@ export default function ApplyPage() {
                       required
                       value={formData.website}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-bg border border-border-subtle rounded-lg text-text-main focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 bg-bg-elevated border border-border rounded-sm text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all duration-200"
                     />
                   </div>
                 </div>
@@ -178,7 +178,7 @@ export default function ApplyPage() {
                       required
                       value={formData.revenue}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-bg border border-border-subtle rounded-lg text-text-main focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 bg-bg-elevated border border-border rounded-sm text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all duration-200"
                     >
                       <option value="">Select range</option>
                       <option value="0-10k">$0 - $10,000</option>
@@ -199,7 +199,7 @@ export default function ApplyPage() {
                       required
                       value={formData.adSpend}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-bg border border-border-subtle rounded-lg text-text-main focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 bg-bg-elevated border border-border rounded-sm text-text-main focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:border-primary transition-all duration-200"
                     >
                       <option value="">Select range</option>
                       <option value="0-5k">$0 - $5,000</option>
@@ -225,7 +225,7 @@ export default function ApplyPage() {
                           type="checkbox"
                           checked={formData.platforms.includes(platform)}
                           onChange={() => handleCheckboxChange(platform)}
-                          className="w-4 h-4 text-primary bg-bg border-border-subtle rounded focus:ring-primary"
+                          className="w-4 h-4 text-primary bg-bg-elevated border-border rounded-sm focus-visible:ring-2 focus-visible:ring-primary transition-all duration-200"
                         />
                         <span className="text-text-muted">{platform}</span>
                       </label>

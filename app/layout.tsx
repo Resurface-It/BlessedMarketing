@@ -84,7 +84,7 @@ export default function RootLayout({
           />
         </noscript>
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen bg-bg">{children}</main>
         <Footer />
       </body>
     </html>

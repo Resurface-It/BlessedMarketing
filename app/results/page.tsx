@@ -37,10 +37,10 @@ export default function ResultsPage() {
               <button
                 key={f}
                 onClick={() => setFilter(f)}
-                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                className={`px-4 py-2 rounded-sm font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                   filter === f
-                    ? 'bg-primary text-slate-950'
-                    : 'bg-bg text-text-muted hover:text-primary border border-border-subtle'
+                    ? 'bg-bg-elevated text-text-main border border-primary shadow-glow-soft'
+                    : 'bg-bg-elevated text-text-muted hover:text-text-main border border-border hover:border-primary'
                 }`}
               >
                 {f}
@@ -68,7 +68,7 @@ export default function ResultsPage() {
       <section className="py-20 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-text-main mb-4">
+            <h2 className="text-h2 font-bold text-text-main mb-4">
               Want to be our next case study?
             </h2>
             <p className="text-text-muted mb-6">

@@ -48,16 +48,16 @@ export default function AboutPage() {
             <p>
               Blessed Marketing was founded on a simple principle: treat every dollar of ad spend like it's our own. 
               We don't believe in busywork, vanity metrics, or long-term contracts that lock you in. We believe in 
-              results, transparency, and earning your business every single month. As a <a href="/services" className="text-primary hover:text-primary-dark underline">performance marketing agency</a>, we specialize in <a href="/services" className="text-primary hover:text-primary-dark underline">paid traffic management</a> and ROAS optimization.
+              results, transparency, and earning your business every single month. As a <a href="/services" className="text-primary hover:text-primary-light underline transition-colors">performance marketing agency</a>, we specialize in <a href="/services" className="text-primary hover:text-primary-light underline transition-colors">paid traffic management</a> and ROAS optimization.
             </p>
             <p>
               Our team lives in your numbers. We monitor campaigns daily, test constantly, and scale what works. 
               We cut what doesn't. No excuses, no fluff—just clear communication about what's moving the needle and 
-              what we're doing to improve it. See our <a href="/process" className="text-primary hover:text-primary-dark underline">marketing process</a> to understand how we deliver results.
+              what we're doing to improve it. See our <a href="/process" className="text-primary hover:text-primary-light underline transition-colors">marketing process</a> to understand how we deliver results.
             </p>
             <p>
               We focus on stewardship: of your budget, your time, and your attention. That means we only take on 
-              clients we can genuinely help, and we structure our fees around performance, not busywork. Check out our <a href="/pricing" className="text-primary hover:text-primary-dark underline">transparent pricing</a> to see how we align our success with yours.
+              clients we can genuinely help, and we structure our fees around performance, not busywork. Check out our <a href="/pricing" className="text-primary hover:text-primary-light underline transition-colors">transparent pricing</a> to see how we align our success with yours.
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               },
             ].map((item, index) => (
               <Card key={item.title}>
-                <h3 className="text-xl font-bold text-text-main mb-3">{item.title}</h3>
+                <h3 className="text-h4 font-bold text-text-main mb-3">{item.title}</h3>
                 <p className="text-text-muted">{item.description}</p>
               </Card>
             ))}
@@ -104,7 +104,7 @@ export default function AboutPage() {
           <Card>
             <div className="space-y-4">
               <div>
-                <h3 className="text-2xl font-bold text-text-main mb-2">Founder Name</h3>
+                <h3 className="text-h2 font-bold text-text-main mb-2">Founder Name</h3>
                 <p className="text-primary font-medium mb-4">Founder & Lead Strategist</p>
               </div>
               <p className="text-text-muted leading-relaxed">
@@ -112,8 +112,8 @@ export default function AboutPage() {
                 and helped dozens of brands scale profitably. I started Blessed Marketing because I was tired of seeing 
                 agencies prioritize their own growth over client results.
               </p>
-              <div className="pt-4 border-t border-border-subtle">
-                <h4 className="text-lg font-semibold text-text-main mb-2">Why I started Blessed Marketing</h4>
+              <div className="pt-4 border-t border-border">
+                <h4 className="text-h5 font-semibold text-text-main mb-2">Why I started Blessed Marketing</h4>
                 <p className="text-text-muted leading-relaxed">
                   After years of working with agencies that cared more about billable hours than client outcomes, 
                   I decided to build something different. Blessed Marketing is built on radical ownership, hard work, 
@@ -135,7 +135,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((value, index) => (
               <Card key={value.title}>
-                <h3 className="text-xl font-bold text-text-main mb-3">{value.title}</h3>
+                <h3 className="text-h4 font-bold text-text-main mb-3">{value.title}</h3>
                 <p className="text-text-muted">{value.description}</p>
               </Card>
             ))}

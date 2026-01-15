@@ -28,10 +28,10 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
         }))}
       />
       <nav aria-label="Breadcrumb" className="mb-8">
-        <ol className="flex flex-wrap items-center gap-2 text-sm text-text-muted">
+        <ol className="flex flex-wrap items-center gap-2 text-body-sm text-text-muted">
           {allItems.map((item, index) => (
             <li key={item.href} className="flex items-center gap-2">
-              {index > 0 && <span className="text-border-subtle">/</span>}
+              {index > 0 && <span className="text-border">/</span>}
               {index === allItems.length - 1 ? (
                 <span className="text-text-main font-medium" aria-current="page">
                   {item.name}
@@ -39,7 +39,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
               ) : (
                 <Link
                   href={item.href}
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-text-main transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
                 >
                   {item.name}
                 </Link>
