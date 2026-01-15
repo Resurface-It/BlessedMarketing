@@ -32,13 +32,13 @@ export function Hero() {
     <>
       {/* Fixed SVG Background */}
       <div
-        className="fixed inset-0 w-full h-full z-0 transition-opacity duration-300 ease-out"
+        className="fixed inset-0 w-full h-full z-0 transition-opacity duration-300 ease-out pointer-events-none"
         style={{ opacity: svgOpacity }}
       >
         <img
           src="/hero-image.svg"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover pointer-events-none"
           aria-hidden="true"
         />
       </div>
